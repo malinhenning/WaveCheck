@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Wave Check - Peniche</title>
+  </head>
+  <body>
+    <h1>Wave Check Peniche 🌊 🤙 🏄‍♂️</h1>
+    <main>
+      <section>
+        <section class="inside-section">
+          <p>Today´s wind (ex. S, SE, N etc.):</p>
+          <input id="windInput" /><button
+            class="ok-button"
+            onclick="
+          saveWind ();
+          "
+          >
+            OK
+          </button>
+
+          <p>Today´s swell (in meters):</p>
+          <input id="swellInput" /><button
+            class="ok-button"
+            onclick="
+        saveSwell();
+        "
+          >
+            OK
+          </button>
+        </section>
+      </section>
+
+      <h2>Where do you wanna surf today?</h2>
+      <button
+        onclick="
+      surfBaleal ();
+      "
+      >
+        Baleal
+      </button>
+      <button
+        onclick="
+      surfCantinho ();
+      "
+      >
+        Cantinho
+      </button>
+      <button
+        onclick="
+      surfCerro ();
+      "
+      >
+        Cerro
+      </button>
+      <button
+        onclick="
+      surfSuperTubos();
+      "
+      >
+        Supertubos
+      </button>
+
+      <h2>Wanna see the best spot for todays conditions?</h2>
+      <button
+        onclick="
+      checkSurf ();
+      "
+      >
+        OH YEAH!
+      </button>
+      <script src="script.js"></script>
+    </main>
+  </body>
+</html>
